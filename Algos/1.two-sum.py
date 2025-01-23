@@ -19,6 +19,17 @@
 # Input: nums = [3,3], target = 6
 # Output: [0,1]
 
+numbers = [2, 7, 11, 15]
+t = 9
 
-def twoSum(self, nums: list[int], target: int) -> List[int]:
-     
+
+def twoSumBrutteForce(nums: list[int], target: int) -> list[int]:
+    for i, x in enumerate(nums):
+        print("X---------->", i, x)
+        for j, y in enumerate(nums):
+            print("Y--------->", i, y)
+            if (i != j & x + y == target):
+                return [i, j]
+                
+
+print(twoSumBrutteForce(numbers, t))
